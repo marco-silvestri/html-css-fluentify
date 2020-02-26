@@ -1,3 +1,5 @@
+/*RESET*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +12,33 @@
   clear: both;
 }
 
+/*ULITIES*/
+
+.btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+}
+
+.green {
+  background-color: #7bbb00;
+  border: 1px solid transparent;
+}
+
+.large {
+  padding: 20px;
+}
+
+.default{
+  padding: 5px 20px;
+}
+
+/*FONT & TYPO*/
+
 .nav-inline li,
 .nav-inline a,
-#jumbotron a {
+#jumbotron a,
+#plan a {
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -25,6 +51,20 @@ h1 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 50px;
 }
+
+h2 {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+p,
+label {
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+  font-size: 14px;
+}
+
+/*WRAPPER STYLES*/
 
 header {
   height: 600px;
@@ -67,24 +107,39 @@ header {
 }
 
 #jumbotron {
-  margin-top: 20%
+  margin-top: 20%;
 }
 
-.btn {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid #FFF;
+.gray-cont{
+  background-color: #CCC;
 }
 
-.green {
-  background-color: #7bbb00;
-  border: 1px solid transparent;
+#plan {
+  width: 80%;
+  padding: 5% 0;
+  margin: auto;
+  height: 100px;
 }
 
-.large {
-  padding: 20px;
+.col-left {
+  width: 50%;
+  float: left;
 }
 
-.default{
-  padding: 5px 20px;
+.col-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+
+/* Custom Select */
+
+.select-a-plan {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #555;
 }
